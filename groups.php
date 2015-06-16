@@ -1,10 +1,11 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: APersinger
- * Date: 05/05/15
- * Time: 3:09 PM
+ * User: apersinger
+ * Date: 05/21/15
+ * Time: 10:23 AM
  */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,10 +35,6 @@
 <body >
 
 <div class="container">
-    <!--
-    <div ng-controller="navigationController">
-        <p dynamic="renderHtml(myHTML)"></p>
-    </div>-->
     <!-- Static navbar  -->
     <div class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
@@ -48,7 +45,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Leveler</a>
+                <a class="navbar-brand" href="/home_page.php">Leveler</a>
             </div>
             <div class="navbar-collapse collapse">
                 <ul id="main_nav" class="nav navbar-nav">
@@ -58,86 +55,15 @@
     </div>
 
     <div id="first_row" class="row">
-        <div id="left_col_row_1" class="col-lg-7">
-            <div id="profile_pic_and_level" class="row">
-                <div class="col-lg-6">
-                    <img class="img-circle" src="holder.js/180x180" alt="Generic placeholder image">
-                    </div>
-                <div class="col-lg-6">
-                    <h4>Level: 27</h4>
-                    <h4>Rank: Amateur</h4>
-                </div>
-            </div>
-
-            <div id="profile_pic_and_level" class="row">
-                <div><p>Exp: 40/100</p></div>
-                <div id="progressbar">
-                    <div></div>
-                </div>
-            </div>
-            <div id="ratings" class="row">
-                <div class="col-lg-6">
-                    <h4>Strength: <span>50/100</span></h4>
-                    <h4>Conditioning: <span>35/100</span></h4>
-                    <h4>Skill: <span>11/100</span></h4>
-                    <h4>Speed: <span>23/100</span></h4>
-                </div>
-                <div class="col-lg-6">
-
-                </div>
-
-            </div>
-        </div>
-        <div id="left_col_row_1" class="col-lg-5">
-            <div id="button_container" class="row">
-                <a onclick="createNewChallenge()" class="btn btn-primary btn-large" id="new_match_button" >Create a Challenge</a><p></p>
-                <a onclick="hostNewEvent()" class="btn btn-primary btn-large" id="new_match_button" >Host an Event</a><p></p>
-                <a onclick="newPR()" class="btn btn-primary btn-large" id="new_match_button" >Destroy a PR</a><p></p>
-                <a onclick="logWorkout()" class="btn btn-primary btn-large" id="new_match_button" >Log a workout</a><p></p>
-                <a onclick="findHashCompat()" class="btn btn-primary btn-large" id="new_match_button" >Find Hash Compat</a><p></p>
-            </div>
-        </div>
+        <h3 id="greeting">Groups</h3>
     </div>
 
     <div id="second_row" class="row">
-        <div id="left_col_row_2" class="col-lg-7">
-            <div id="recent_activity" class="row">
-                <h4>Recent Activity</h4>
-                <p>User_X Logged a workout for the day!</p>
-                <p>User_Y Placed 10th in her first scaled competition</p>
-                <p>User_Z Beat his squat PR by 20lbs</p>
-                <p>User_W reached level 50 and is now eligible for RX events!</p>
-            </div>
-        </div>
-        <div id="rght_col_row_2" class="col-lg-5">
-            <div id="upcoming_events" class="row">
-                <h4>Upcoming Events</h4>
-                <div id="events">
-                    <div class="circle">13<span class="info">infoinfoinfo</span></div>
-                    <div class="circle">10<span class="info">infoinfoinfo</span></div>
-                    <div class="circle">15<span class="info">infoinfoinfo</span></div>
-                </div>
-            </div>
-        </div>
+
     </div>
 
-    <div id="third_row" class="row">
-        <div id="left_col_row_3" class="col-lg-7">
-            <div id="empty" class="row">
-            </div>
-        </div>
-        <div id="rght_col_row_3" class="col-lg-5">
-            <div id="challenges" class="row">
-                <h4>Challenges</h4>
-            </div>
-        </div>
-    </div>
+    <div id="extra_row_1" class="row">
 
-    <div id="dialog-modal" title="" class="container">
-        <div id="workoutcontent" class="workout-content"></div>
-        <div id="workout-footer" class="workout-footer"></div>
-        <p></p>
-    </div>
 </div>
 
 
@@ -176,28 +102,34 @@
         $(this).addClass('active');
         console.log(toParse);
         /*if(toParse == "#basic") {
-            buildBasicStats();
-        } else if(toParse == "#adv") {
-            alert("Maybe one day...");
-        } else if(toParse == "#players") {
-            buildPlayers();
-        } else if(toParse == "#sbs") {
-            buildAPIView();
-        } else if(toParse == "#pac") {
-            printAllChampions();
-        } else if(toParse == "#cpr") {
-            printChampionPriority();
-        } else if(toParse == "#gar") {
-            buildGarrettTestPage();
-        } else if(toParse == "#gwp") {
-            buildGroupPage();
-        } else if(toParse == "#php") {
+         buildBasicStats();
+         } else if(toParse == "#adv") {
+         alert("Maybe one day...");
+         } else if(toParse == "#players") {
+         buildPlayers();
+         } else if(toParse == "#sbs") {
+         buildAPIView();
+         } else if(toParse == "#pac") {
+         printAllChampions();
+         } else if(toParse == "#cpr") {
+         printChampionPriority();
+         } else if(toParse == "#gar") {
+         buildGarrettTestPage();
+         } else if(toParse == "#gwp") {
+         buildGroupPage();
+         } else if(toParse == "#php") {
          phpInfo();
          }*/
     });
 
     $('#btn_click').on('click', function() { window.location = 'http://www.google.com'; });
 
+    function changeTo400() {
+        $("#profile_pic").attr("src", "holder.js/400x400")
+    }
+    function changeTo300() {
+        $("#profile_pic").attr("src", "holder.js/300x300")
+    }
 
 </script>
 

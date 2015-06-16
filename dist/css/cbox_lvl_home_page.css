@@ -30,3 +30,9 @@
     color:#777;
     margin-left:20px
 }
+
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

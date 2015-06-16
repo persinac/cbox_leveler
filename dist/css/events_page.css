@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#map-canvas {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+}
+
+.division_stick_fig_rx {
+    width: 25px;
+    height: 60px;
+}
+
+.division_stick_fig_sc {
+    width: 15px;
+    height: 40px;
+}

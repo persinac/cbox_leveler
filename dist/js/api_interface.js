@@ -240,3 +240,15 @@ function backgroundViewTeams() {
         }
     });
 }
+
+
+function findHashCompat() {
+    $.ajax({
+        type: "POST",
+        url: "/CRUD/general/digital_oc_test.php",
+        dataType: "text",
+        success: function(response) {
+            console.log("digital_oc_test: " + response);
+        }
+    });
+}
